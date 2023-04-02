@@ -1,9 +1,9 @@
 import React from 'react';
-import { useRef,useState,useEffect } from 'react';
+import { useRef,useState, } from 'react';
 import '../css/login.css';
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
-import { AppBar, Box, Toolbar } from "@mui/material";
+import { AppBar, Box } from "@mui/material";
 import { Stack } from '@mui/system';
 const log1 = require('../assets/images/harena3.png');
 const api=axios.create({
@@ -59,7 +59,7 @@ const LoginPage = () => {
       position:"absolute",
       width:"100%",
       height:"100%",
-      backgroundColor:"#05052f"
+      backgroundColor:"#05052f" 
     }}>
       <AppBar sx={{
         backgroundColor:"#05052f",
