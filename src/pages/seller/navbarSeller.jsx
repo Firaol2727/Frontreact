@@ -48,7 +48,7 @@ const drawer = (
         </Typography>
         <Divider />
         <List>
-            <Link href="http://localhost:3000/selhome" underline="none" >
+            <Link href="/selhome" underline="none" >
             <ListItem  disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                    <ListItemText primary="AddProduct" />
@@ -56,7 +56,7 @@ const drawer = (
             </ListItem>
             </Link>
             <hr/>
-            <Link href="http://localhost:3000/myproduct" underline="none" >
+            <Link href="/myproduct" underline="none" >
             <ListItem  disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                    <ListItemText primary="MyProduct" />
@@ -64,7 +64,7 @@ const drawer = (
             </ListItem>
             </Link>
             <hr/>
-            <Link href="http://localhost:3000/myprofile" underline="none" >
+            <Link href="/myprofile" underline="none" >
             <ListItem  disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                    <ListItemText primary="Myprofile" />
@@ -102,11 +102,11 @@ return (
             Harena.com
         </Typography>
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Link href="http://localhost:3000/selhome" underline="none" ><Button  sx={{ color: '#fff' }}>AddProduct</Button></Link>
+            <Link href="/selhome" underline="none" ><Button  sx={{ color: '#fff' }}>AddProduct</Button></Link>
 
-            <Link href="http://localhost:3000/myproduct" underline="none" ><Button  sx={{ color: '#fff' }}>MyProduct</Button></Link>
+            <Link href="/myproduct" underline="none" ><Button  sx={{ color: '#fff' }}>MyProduct</Button></Link>
 
-            <Link href="http://localhost:3000/myprofile" underline="none" ><Button  sx={{ color: '#fff' }}>Myprofile</Button></Link>
+            <Link href="/myprofile" underline="none" ><Button  sx={{ color: '#fff' }}>Myprofile</Button></Link>
             <Button onClick={handleLogout} sx={{ color: '#fff' }}>Logout</Button>
         </Box>
         </Toolbar>

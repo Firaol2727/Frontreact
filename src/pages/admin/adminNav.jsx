@@ -33,7 +33,7 @@ const drawer = (
         </Typography>
         <Divider />
         <List>
-            <Link href="http://localhost:3000/watchorder" underline="none">
+            <Link href="/watchorder" underline="none">
             <ListItem disablePadding sx={{
                 border:"1px black"
             }}>
@@ -45,7 +45,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
 
-            <Link href="http://localhost:3000/totalsell" underline="none">
+            <Link href="/totalsell" underline="none">
             <ListItem disablePadding sx={{
                 border:"1px black"
             }}>
@@ -57,7 +57,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
 
-            <Link href="http://localhost:3000/addseller" underline="none">
+            <Link href="/addseller" underline="none">
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <ListItemText primary={"addSeller"} />
@@ -67,7 +67,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
 
-            <Link href="http://localhost:3000/sellers" underline="none">
+            <Link href="/sellers" underline="none">
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <ListItemText primary={"sellers"} />
@@ -77,7 +77,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
 
-            <Link href="http://localhost:3000/myprofilea" underline="none">
+            <Link href="/myprofilea" underline="none">
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <ListItemText primary={"Myprofile"} />
@@ -87,7 +87,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
             
-            <Link href="http://localhost:3000/addseller" underline="none">
+            <Link href="/addseller" underline="none">
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <ListItemText primary={"AddSeller"} />
@@ -97,7 +97,7 @@ const drawer = (
 
             <Divider variant="inset" component="li" />
             
-            <Link href="http://localhost:3000/addcategory" underline="none">
+            <Link href="/addcategory" underline="none">
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <ListItemText primary={"AddCategory"} />
@@ -129,14 +129,14 @@ return (
             Harena.com
         </Typography>
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Link href="http://localhost:3000/watchorder" underline="none" ><Button  sx={{ color: '#fff' }}>Watch Order</Button></Link>
+            <Link href="/watchorder" underline="none" ><Button  sx={{ color: '#fff' }}>Watch Order</Button></Link>
 
-            <Link href="http://localhost:3000/addseller" underline="none" ><Button  sx={{ color: '#fff' }}>Add Seller</Button></Link>
+            <Link href="/addseller" underline="none" ><Button  sx={{ color: '#fff' }}>Add Seller</Button></Link>
 
-            <Link href="http://localhost:3000/sellers" underline="none" ><Button  sx={{ color: '#fff' }}>sellers</Button></Link>
-            <Link href="http://localhost:3000/myprofilea" underline="none" ><Button  sx={{ color: '#fff' }}>profile</Button></Link>
-            <Link href="http://localhost:3000/addcategory" underline="none" ><Button  sx={{ color: '#fff' }}>Add Category</Button></Link>
-            <Link href="http://localhost:3000/totalsell" underline="none"><Button  sx={{ color: '#fff' }}>Total Sell</Button></Link>
+            <Link href="/sellers" underline="none" ><Button  sx={{ color: '#fff' }}>sellers</Button></Link>
+            <Link href="/myprofilea" underline="none" ><Button  sx={{ color: '#fff' }}>profile</Button></Link>
+            <Link href="/addcategory" underline="none" ><Button  sx={{ color: '#fff' }}>Add Category</Button></Link>
+            <Link href="/totalsell" underline="none"><Button  sx={{ color: '#fff' }}>Total Sell</Button></Link>
             
         </Box>
         </Toolbar>

@@ -45,8 +45,8 @@ const Profile=()=>{
         }
         }).catch(err=>{
             if (err.response.status===404) {
-                // console.log(err.response)
-                nav('/sellerLogin') 
+                console.log(err.response)
+                
                 setmessage("update failed");
             } else if (err.request) {
                 setmessage("something went wrong");
