@@ -1,0 +1,42 @@
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Rating from '@mui/material/Rating';
+export default function ImgMediaCard(props) {
+    const [value, setValue] = React.useState(2);
+    console.log("props",props)
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="250"
+        image="https://images.unsplash.com/photo-1522770179533-24471fcdba45"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+          <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  );
+}

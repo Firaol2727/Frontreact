@@ -1,0 +1,30 @@
+
+.items{
+    float:left;
+    height:50px;
+    width:50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.details
+{
+    position:"relative";
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: "4px";
+}
+.bigPicture{
+    position:"absolute";
+    /* float:"left"; */
+    left:"1px";
+    background-color: gray;
+    height: 380px;
+    width: 350px;
+    margin-left: 20px;
+}
+.detailWords{
+    position:"relative";
+    font-style:"normal";
+    font-size: large;
+    height:"600px";
+}
