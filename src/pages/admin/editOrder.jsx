@@ -79,6 +79,7 @@ const EditOrder = () => {
     }
     
     useEffect(()=>{
+        console.log("running the use Effect")
         api.get(`/watchorder/${oid}`,
     {
       withCredentials:true

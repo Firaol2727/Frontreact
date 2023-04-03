@@ -92,6 +92,7 @@ const MyProfileA = () => {
 
     }
     useEffect(()=>{
+        console.log("running the use Effect")
         api.get('/getprofilea',{
             withCredentials:true
         }
