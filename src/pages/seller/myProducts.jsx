@@ -17,11 +17,11 @@ import axios from 'axios';
 
 const MyProduct = () => {
     const nav=useNavigate();
-    // const [dense, setDense] = React.useState(false);
-    // const [message,setmessage]=useState('');
+    const [dense, setDense] = React.useState(false);
+    const [message,setmessage]=useState('');
     const [edited,setedited]=useState(false);
     let [products,setProducts]=useState([]);
-    // const [pictures,setpictures]=useState();
+    const [pictures,setpictures]=useState();
     const api=axios.create({
         baseURL:"https://harenastore.onrender.com/sel"
       });
