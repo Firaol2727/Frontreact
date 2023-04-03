@@ -107,6 +107,7 @@ const MyProfile = () => {
             setCity(received.city)
             setsubcity(received.subcity)
             setslocation(received.slocation)
+            setAuthorized(true)
             // console.log(profiles[0]);
         }
         }).catch(err=>{
@@ -124,7 +125,7 @@ const MyProfile = () => {
     },[normal,editMode])
     return ( 
     <>
-    <>
+    {authorized &&<>
     <NavbarSeller/>
     <Box sx={{
         position:"absolute",
@@ -133,13 +134,7 @@ const MyProfile = () => {
         height:"150px",
         backgroundColor:"gray"
      }}>
-        <Typography variant="h6" sx={{
-            position:"absolute",
-            left:"15%",
-            top:"60px",
-            color:"white",
-            alignSelf:"center"
-        }}> HARENA.com the leading Ecommerce Website !</Typography>
+        
      </Box>
      <Avatar sx={{
             position:"absolute",
@@ -350,7 +345,8 @@ const MyProfile = () => {
     <br/>   
         <Button type='submit' variant='contained' color="primary" >POST</Button>   
     </form>}
-    </> 
+    </> }
+    {!authorized && <CircularProgress/>}
 
     </>
     );
