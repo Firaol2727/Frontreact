@@ -128,7 +128,6 @@ const MyProfileA = () => {
       },[normal])
     return ( 
         <>
-    {auth &&
         <>
         <NavbarAdmin/>
         <Box sx={{
@@ -288,8 +287,7 @@ const MyProfileA = () => {
     <br/>
         <div> ------</div>
     </>
-    },
-    { !auth && <CircularProgress/>} 
+    
     </>
    
     );
