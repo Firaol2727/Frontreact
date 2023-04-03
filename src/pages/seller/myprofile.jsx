@@ -124,7 +124,7 @@ const MyProfile = () => {
     },[normal,editMode])
     return ( 
     <>
-    {authorized &&<>
+    <>
     <NavbarSeller/>
     <Box sx={{
         position:"absolute",
@@ -350,8 +350,7 @@ const MyProfile = () => {
     <br/>   
         <Button type='submit' variant='contained' color="primary" >POST</Button>   
     </form>}
-    </> }
-    {!authorized && <CircularProgress/>}
+    </> 
 
     </>
     );

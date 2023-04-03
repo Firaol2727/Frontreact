@@ -114,8 +114,7 @@ const EditOrder = () => {
     return ( 
         <>
         <NavbarAdmin/>
-        {
-            found&&<div sx={{position:"absolute" ,
+        <div sx={{position:"absolute" ,
             top:"100px"}}
             >
             <Box>
@@ -229,15 +228,8 @@ const EditOrder = () => {
             }} onClick={handleDelete}><p style={{color:"white"  }} >Delete</p> </Button>
         </Stack>
         </Box>
-        </div>}
-        {
-            !found && <div sx={{position:"absolute" ,marginTop:"px"}}>
-            <br></br>
-            <br></br>
-            <h3> ......... Loading </h3>
-
-            </div>
-        }
+        </div>
+        
 
     </>);
 }

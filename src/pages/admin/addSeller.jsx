@@ -12,9 +12,6 @@ const AddSeller = () => {
   const [authorized,setauthorized]= useState(false);
   const [message,setmessage]=useState("")
   useEffect((nav)=>{
-    const api=axios.create({
-      baseURL:"https://harenastore.onrender.com/special"
-    });
     api.get('/watchorder',{
       withCredentials:true
     }
@@ -96,8 +93,7 @@ const AddSeller = () => {
 ]
     return ( 
       <>
-      {
-        authorized && 
+      
         <>
           <NavbarAdmin/>
           <Box sx={{
@@ -199,8 +195,7 @@ const AddSeller = () => {
         <div> ------</div>
          </Box>
         </>
-      },
-      {!authorized && <CircularProgress/>}
+      
       </>
      );
 }
