@@ -127,7 +127,8 @@ const Profile=()=>{
     });
     },[normal,editMode])
     return (
-        <div className='profile'>
+        <>
+        {authorized && <div className='profile'>
             <Navbar/>
             <Box sx={{
         position:"absolute",
@@ -328,7 +329,8 @@ const Profile=()=>{
     </form>}
     {!authorized && <CircularProgress/>}
 
-        </div>
+        </div>}
+        </>
     );
 }
 export default Profile;

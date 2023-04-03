@@ -93,7 +93,8 @@ const AddSeller = () => {
 ]
     return ( 
       <>
-      
+      {
+        authorized && 
         <>
           <NavbarAdmin/>
           <Box sx={{
@@ -195,7 +196,8 @@ const AddSeller = () => {
         <div> ------</div>
          </Box>
         </>
-      
+      },
+      {!authorized && <CircularProgress/>}
       </>
      );
 }

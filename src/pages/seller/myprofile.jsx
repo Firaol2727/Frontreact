@@ -1,8 +1,7 @@
-import { Avatar, TextField, Typography,Button,CircularProgress } from '@mui/material';
+import { Avatar, TextField,Button,CircularProgress } from '@mui/material';
 import { Edit } from "@mui/icons-material";
 import { Box } from '@mui/system';
 import NavbarSeller from './navbarSeller';
-import Autocomplete from '@mui/material/Autocomplete';
 import React,{ useState,useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';

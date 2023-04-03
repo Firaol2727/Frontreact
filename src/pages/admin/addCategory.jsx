@@ -144,7 +144,8 @@ const handleSumbitBroad= async(e)=>{
 }
     return ( 
         <>
-    
+        {
+        authorized && 
         <>
         <NavbarAdmin/>
         <Box sx={{
@@ -211,6 +212,8 @@ const handleSumbitBroad= async(e)=>{
     <div> ------</div>
         </Box>
     </>
+    },
+    {!authorized && <CircularProgress/>}
     </>
     );
 }

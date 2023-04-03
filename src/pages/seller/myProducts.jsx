@@ -17,11 +17,11 @@ import axios from 'axios';
 
 const MyProduct = () => {
     const nav=useNavigate();
-    const [dense, setDense] = React.useState(false);
-    const [message,setmessage]=useState('');
+    // const [dense, setDense] = React.useState(false);
+    // const [message,setmessage]=useState('');
     const [edited,setedited]=useState(false);
     let [products,setProducts]=useState([]);
-    const [pictures,setpictures]=useState();
+    // const [pictures,setpictures]=useState();
     const api=axios.create({
         baseURL:"https://harenastore.onrender.com/sel"
       });
@@ -34,23 +34,23 @@ const MyProduct = () => {
     if(x<650) return "170px";
     else  return "300px";
     }
-    const handleDelete =(id)=>{
-        console.log(id)
-        setmessage('......deleting')
-        api.post('/deleteproduct',{id},{
-            withCredentials:true
-        })
-        .then(res=>{
-            if(res.status===200){
-                setedited(true);
-                setmessage("")
-            }
+    // const handleDelete =(id)=>{
+    //     console.log(id)
+    //     setmessage('......deleting')
+    //     api.post('/deleteproduct',{id},{
+    //         withCredentials:true
+    //     })
+    //     .then(res=>{
+    //         if(res.status===200){
+    //             setedited(true);
+    //             setmessage("")
+    //         }
 
-        })
-        .catch(err=>{
-            console.log(err)
-        }) 
-    }
+    //     })
+    //     .catch(err=>{
+    //         console.log(err)
+    //     }) 
+    // }
 
     useEffect(()=>{
         console.log("useeffect processing ")
@@ -83,8 +83,9 @@ const MyProduct = () => {
             });
     },[edited])
     return ( 
-        <div>
-            <NavbarSeller/>
+        <>
+        <NavbarSeller/>
+        {products.length>0 &&<div>
             <ImageList gap={6} sx={{ position:"absolute", 
     top:"80px" , zIndex:"2", width:"90%",
     //  background:"grey",
@@ -138,7 +139,13 @@ const MyProduct = () => {
                 }
             
             </ImageList>
-        </div>
+        </div>}
+        {
+            products.length<=0 &&<div>
+                <b>No products yet !</b>
+            </div>
+        }
+        </>
      );
 }
 export default MyProduct;
