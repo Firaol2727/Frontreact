@@ -16,7 +16,13 @@ import { CircularProgress, Typography } from '@mui/material';
 const Sellers = () => {
   const api=axios.create(
     {
-      baseURL:"https://harenastore.onrender.com/special"
+      baseURL:"https://harenastore.onrender.com/special",
+      headers:{
+        'x-apikey': '59a7ad19f5a9fa0808f11931',
+        'Access-Control-Allow-Origin' : '*',
+        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+        'Access-Control-Allow-Credentials':true
+    }
     }
   )
   const [change,setchange]=useState(false);
