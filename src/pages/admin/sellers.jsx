@@ -38,7 +38,8 @@ const Sellers = () => {
     useEffect(()=>{
       console.log("running the use Effect")
         api.get('/sellers',{
-          withCredentials:true
+          // withCredentials:true,
+          'Access-Control-Allow-Credentials':true
         }).then(res=>{
             let data=res.data;
             console.log(data)
