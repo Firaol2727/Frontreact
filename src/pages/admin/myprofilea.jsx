@@ -179,8 +179,7 @@ const MyProfileA = () => {
        setnormal(true)
        setchangepassword(false)
      } } 
-      
-       sx={{
+        sx={{
             position:"absolute",
             top:"210px",
             left:"70%",

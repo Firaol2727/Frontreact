@@ -3,6 +3,7 @@ body {
     background-color:#05052f;
     padding-top:30px;
     padding-bottom:30px;
+    
 }
 .box{
     width:250px;
@@ -40,7 +41,7 @@ form button{
     padding-left:20px;
     padding-right:20px;
 }
-form a{
+form p{
     font-size:12px;
 }
 form .mode{

@@ -202,11 +202,18 @@ export default function Categories() {
       <Box sx={{
         position:"relative",
         height:"200px",
+        color:"white",
+        backgroundColor:"#282A3A"
       }}> 
+        <center><b>Contact Us</b> </center>
+        <p>Email - fraolgetachew2772@gmail.com</p> 
+        <p>phone - +251966003807 /+251976087942</p>
+        <p>facebook - http://facebook.com</p>
       </Box>
       <Box sx={{
         position:"relative",
         height:"200px",
+        backgroundColor:"green"
       }}>
       </Box>
       

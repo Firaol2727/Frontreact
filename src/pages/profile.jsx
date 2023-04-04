@@ -122,7 +122,7 @@ const Profile=()=>{
     } else {
           // Anything else
         console.log(err);
-        // nav('/selleLogin') 
+        
     }
     });
     },[normal,editMode])
