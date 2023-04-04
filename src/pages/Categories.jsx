@@ -213,7 +213,7 @@ export default function Categories() {
       <Box sx={{
         position:"relative",
         height:"200px",
-        backgroundColor:"green"
+        backgroundColor:"#282A3A"
       }}>
       </Box>
       

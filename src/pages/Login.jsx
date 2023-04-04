@@ -66,7 +66,7 @@ const LoginPage = () => {
       .then(res=>{
           console.log(res)
           if(res.status===200){
-            nav('/home')
+            nav('/selhome')
           }
       })
     .catch(err=>{
