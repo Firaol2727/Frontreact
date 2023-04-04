@@ -14,13 +14,14 @@ const WatchOrder = () => {
   let item=[];
   let [rows,setrows]=useState([]);
   const api=axios.create({
-    baseURL:"https://harenastore.onrender.com/special"
+    baseURL:"https://harenastore.onrender.com/special",
   });
   const nav=useNavigate();
   useEffect(()=>{
     api.get('/watchorder',
     {
-      withCredentials:true
+      // withCredentials:true,
+      'Access-Control-Allow-Credentials':true
     }
   ).then(res=>{
     let data=res.data;
