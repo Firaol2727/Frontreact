@@ -17,12 +17,7 @@ const Sellers = () => {
   const api=axios.create(
     {
       baseURL:"https://harenastore.onrender.com/special",
-      headers:{
-        'x-apikey': '59a7ad19f5a9fa0808f11931',
-        'Access-Control-Allow-Origin' : '*',
-        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-        'Access-Control-Allow-Credentials':true
-    }
+      
     }
   )
   const [change,setchange]=useState(false);
@@ -44,8 +39,8 @@ const Sellers = () => {
     useEffect(()=>{
       console.log("running the use Effect")
         api.get('/sellers',{
-          // withCredentials:true,
-          'Access-Control-Allow-Credentials':true
+          withCredentials:true,
+          
         }).then(res=>{
             let data=res.data;
             console.log(data)
