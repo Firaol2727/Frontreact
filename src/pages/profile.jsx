@@ -330,6 +330,11 @@ const Profile=()=>{
     {!authorized && <CircularProgress/>}
 
         </div>}
+        {
+            !authorized && <center>
+                <CircularProgress />
+            </center>
+        }
         
         </>
     );
